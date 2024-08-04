@@ -1,26 +1,29 @@
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-import HomeBanner from "./components/HomeBanner";
 import Header from "./components/Header/Header";
-import HomeMidSection from "./components/HomeMidSection/HomeMidSection";
-import SpeakersSideBar from "./components/SpeakersSideBar/SpeakersSideBar";
-import RegisterNowBtn from "./components/RegisterNowBtn/RegisterNowBtn";
-import OurMission from "./components/OurMission/OurMission";
 import Footer from "./components/Footer/Footer";
+import Home from "./components/Home";
+import About from "./components/About/About";
+import Speakers from "./components/Speakers/Speakers";
+import Schedule from "./components/Schedule/Schedule";
+import Register from "./components/Register/Register";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <HomeBanner />
-      <HomeMidSection />
-      <RegisterNowBtn />
-      <div className="home-body-section">
-        <SpeakersSideBar />
-        <OurMission />
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/speakers" element={<Speakers />} />
+          <Route path="/schedule" element={<Schedule />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+        <Footer />
       </div>
-
-      <Footer />
-    </div>
+    </Router>
   );
 }
 

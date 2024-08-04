@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 import RegisterButton from "../RegisterButton/RegisterButton";
 import { ReactComponent as AlignConLogo } from "./logo.svg";
@@ -10,25 +11,23 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  console.log(isMenuOpen);
-
   return (
     <header>
       <AlignConLogo className="logo" />
       <div className="desktop-nav">
         <nav className="top-nav">
-          <a href="#about" className="nav-link">
+          <Link to="/about" className="nav-link">
             About
-          </a>
-          <a href="#speakers" className="nav-link">
+          </Link>
+          <Link to="/speakers" className="nav-link">
             Speakers
-          </a>
-          <a href="#schedule" className="nav-link">
+          </Link>
+          <Link to="/schedule" className="nav-link">
             Schedule
-          </a>
-          <a href="#sponsors" className="nav-link">
-            Sponsors
-          </a>
+          </Link>
+          <Link to="/register" className="nav-link">
+            Register
+          </Link>
         </nav>
         <RegisterButton />
       </div>
@@ -42,22 +41,20 @@ const Header = () => {
       </button>
       {isMenuOpen && (
         <nav className="mobile-menu">
-          <a href="#about" className="nav-link" onClick={toggleMenu}>
+          <Link to="/about" className="nav-link" onClick={toggleMenu}>
             About
-          </a>
-          <a href="#speakers" className="nav-link" onClick={toggleMenu}>
+          </Link>
+          <Link to="/speakers" className="nav-link" onClick={toggleMenu}>
             Speakers
-          </a>
-          <a href="#schedule" className="nav-link" onClick={toggleMenu}>
+          </Link>
+          <Link to="/schedule" className="nav-link" onClick={toggleMenu}>
             Schedule
-          </a>
-          <a href="#sponsors" className="nav-link" onClick={toggleMenu}>
+          </Link>
+          <Link to="/sponsors" className="nav-link" onClick={toggleMenu}>
             Sponsors
-          </a>
+          </Link>
         </nav>
       )}
-      {/* <RegisterButton /> */}
-      {/* </div> */}
     </header>
   );
 };
