@@ -1,5 +1,11 @@
+import "../Subpage.css";
+
 const Register = () => {
-  return <p>hello world</p>;
+  return (
+    <div className="sub-page-container">
+      <h2>Register</h2>
+    </div>
+  );
 };
 
 export default Register;
