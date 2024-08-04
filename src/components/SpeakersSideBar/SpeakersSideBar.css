@@ -1,0 +1,110 @@
+.speaker {
+    color: white;
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 28px;
+    margin-top: 0px;
+}
+
+.speaker-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.speaker-img-container {
+    flex-shrink: 0;
+    width: 250px;
+    overflow: hidden;
+}
+
+.speaker-container.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.speaker-header {
+    font-size: 40px;
+    color: white;
+    font-family: 'Dela Gothic One', sans-serif;
+}
+
+.speaker-img {
+    max-width: 250px;
+    height: auto;
+    padding-right: 20px;
+    box-sizing: border-box;
+    object-fit: cover; /* This ensures the image covers the area without stretching */
+}
+
+.speakers-sidebar {
+    width: 50%;
+    padding-left: 40px;
+}
+
+
+
+.speaker-bio {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-family: "Doppio One", sans-serif;
+}
+
+.speaker-mobile {
+    display: none;
+}
+
+@media (max-width: 968px) {
+    .speakers-sidebar {
+        width: calc(100% - 80px);
+        padding-left: 40px;
+    }
+    .speaker-img-container {
+        width: 200px;
+    }
+
+    .speaker-img {
+        max-width: 200px;
+        height: auto;
+    }
+}
+
+@media (max-width: 668px) {
+    .speakers-sidebar {
+        width: calc(100% - 80px);
+        padding-left: 40px;
+    }
+    .speaker-img-container {
+        width: 100%;
+        /* margin-left: 5%; */
+        /* background-color: red; */
+    }
+
+    .speaker-img {
+        max-width: 100%;
+        width: 100%;
+        /* margin-left: 10%; */
+        height: auto;
+        padding-right: 0px;
+    }
+
+    .speaker {
+        display: none;
+    }
+
+    .speaker-mobile {
+        display: block;
+        font-size: 33px;
+        color: white;
+        font-family: 'Dela Gothic One', sans-serif;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .speaker-container {
+        flex-direction: column;
+    }
+}

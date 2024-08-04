@@ -1,0 +1,39 @@
+.home-body-section {
+    width: 100%;
+    display: flex;
+}
+
+/* Give each child a flex-basis of 0 and allow them to grow */
+.home-body-section > * {
+    flex: 1 0 0;
+}
+
+.App {
+    overflow: hidden;
+}
+
+@media (max-width: 968px) {
+    .home-body-section {
+        flex-direction: column;
+    }
+    
+    /* Reorder the children for mobile */
+    .home-body-section > :first-child {
+        order: 2;
+    }
+    
+    .home-body-section > :last-child {
+        order: 1;
+    }
+}
+
+/* .home-body-section {
+    width: 100%;
+    display: flex;
+}
+
+@media (max-width: 968px) {
+    .home-body-section {
+        flex-direction: column;
+    }
+} */

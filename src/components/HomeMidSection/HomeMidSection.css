@@ -1,0 +1,71 @@
+.home-mid-section {
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: "Doppio One", sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.logos-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.mid-logo {
+    height: 3vw;
+    position: relative;
+}
+
+
+.bd-logo {
+    height: 3vw;
+    position: relative;
+    /* margin-right: 20px; */
+}
+
+.align-con-logo {
+    /* padding-left: 10px; */
+    height: 3vw;
+    width: 200px;
+}
+
+.uchi-logo {
+    height: 60px;
+    position: relative;
+    /* margin-right: 20px; */
+}
+
+.logos-div > * {
+    /* height: 5vw; */
+    margin: 20px;
+  }
+
+@media screen and (max-width: 768px) {
+    .logos-div {
+      justify-content: space-around;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  
+    .logos-div > * {
+      height: 5vw;
+    }
+  
+}
+
+@media screen and (max-width: 608px) {
+    .logos-div {
+      justify-content: space-around;
+      padding-left: 30px;
+      padding-right: 30px;
+      flex-wrap: wrap;
+    }
+  
+    .logos-div > * {
+      height: 7.5vw;
+    }
+  
+}

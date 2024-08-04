@@ -1,0 +1,68 @@
+footer {
+    width: 100%;
+    border-top: solid grey 1px;
+    display: flex;
+    justify-content:center;
+    position: relative;
+}
+
+.footer-container {
+    width: 20%;
+    height: 300px;
+    padding-top: 40px;
+    /* background-color: blue; */
+}
+
+.footer-logo {
+    width: 80%;
+}
+
+.footer-text {
+    font-size: 16px;
+    color: white;
+    font-family: "Doppio One", sans-serif;
+    margin: 0px;
+}
+
+.copyright {
+    font-size: 12px;
+    color: white;
+    font-family: "Doppio One", sans-serif;
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+
+    text-align: center;
+
+    /* text-align: center; */
+}
+
+.footer-logo-title {
+    font-size: 20px;
+    color: rgb(64, 102, 255);
+    font-family: "Doppio One", sans-serif;
+    margin-top: 0px;
+    text-align: center;
+}
+
+#footer-center-links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 20px; */
+}
+
+.footer-link {
+    color: white;
+    font-size: 16px;
+    font-family: "Doppio One", sans-serif;
+    text-align: center;
+    padding: 5px;
+}
+
+.footer-link-contianer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* margin-top: 20px; */
+}

@@ -1,0 +1,38 @@
+.our-mission {
+    color: white;
+    flex: 1;
+    text-align: center;
+}
+
+.mission-header {
+    font-size: 35px;
+    color: white;
+    font-family: 'Dela Gothic One', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    /* font */
+}
+
+.mission-hr {
+    width: 50%;
+    border: 1px solid rgb(40, 62, 255);
+    margin: 10px auto 10px auto;
+}
+
+.theory-of-change-text {
+    /* margin: 30px; */
+    padding-left: 70px;
+    padding-right: 50px;
+    text-align: left;
+    /* mar */
+    font-family: "Doppio One", sans-serif;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 668px) {
+    .theory-of-change-text {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 0px;
+    }
+}
