@@ -1,5 +1,11 @@
 .register-button {
-    /* Reset default button styles */
+    /* Reset default anchor styles */
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    line-height: 36px; /* Match the height for vertical centering */
+
+    /* Existing styles */
     background: white;
     border: none;
     padding: 0;
