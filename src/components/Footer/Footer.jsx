@@ -1,5 +1,6 @@
 import "./Footer.css";
 import { ReactComponent as Logo } from "../Header/logo.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -11,25 +12,25 @@ const Footer = () => {
       <div className="footer-container">
         <p className="footer-logo-title">Links</p>
         <nav className="footer-link-contianer">
-          <a className="footer-link" href="https://www.google.com/">
+          <Link to="/about" className="footer-link">
             About
-          </a>
-          <a className="footer-link" href="https://www.google.com/">
+          </Link>
+          <Link to="/speakers" className="footer-link">
             Speakers
-          </a>
-          <a className="footer-link" href="https://www.google.com/">
+          </Link>
+          <Link to="/schedule" className="footer-link">
             Schedule
-          </a>
-          <a className="footer-link" href="https://www.google.com/">
-            Sponsers
-          </a>
+          </Link>
+          <Link to="/register" className="footer-link">
+            Register
+          </Link>
         </nav>
       </div>
       <div className="footer-container">
         <p className="footer-logo-title">Take Action</p>
         <nav className="footer-link-contianer">
           <a className="footer-link" href="https://www.google.com/">
-            Register
+            Interest Form
           </a>
           <a className="footer-link" href="https://www.google.com/">
             Contact

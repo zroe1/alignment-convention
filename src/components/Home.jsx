@@ -4,6 +4,7 @@ import HomeMidSection from "./HomeMidSection/HomeMidSection";
 import SpeakersSideBar from "./SpeakersSideBar/SpeakersSideBar";
 import RegisterNowBtn from "./RegisterNowBtn/RegisterNowBtn";
 import OurMission from "./OurMission/OurMission";
+import FAQ from "./FQA/FQA";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <SpeakersSideBar />
         <OurMission />
       </div>
+      <FAQ />
     </>
   );
 };

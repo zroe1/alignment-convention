@@ -10,7 +10,6 @@ footer {
     width: 20%;
     height: 300px;
     padding-top: 40px;
-    /* background-color: blue; */
 }
 
 .footer-logo {
@@ -31,10 +30,7 @@ footer {
     position: absolute;
     width: 100%;
     bottom: 20px;
-
     text-align: center;
-
-    /* text-align: center; */
 }
 
 .footer-logo-title {
@@ -49,7 +45,6 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* margin-top: 20px; */
 }
 
 .footer-link {
@@ -58,11 +53,11 @@ footer {
     font-family: "Doppio One", sans-serif;
     text-align: center;
     padding: 5px;
+    text-decoration: none;
 }
 
 .footer-link-contianer {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    /* margin-top: 20px; */
 }
