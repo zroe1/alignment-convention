@@ -1,7 +1,8 @@
 .faq-section {
     background-color: #000;
     color: #fff;
-    padding: 60px 0;
+    padding: 0px;
+    padding-bottom: 60px;
   }
   
   .faq-container {
