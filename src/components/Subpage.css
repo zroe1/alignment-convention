@@ -8,3 +8,17 @@ h2 {
 .sub-page-container {
     width: 100%;
 }
+
+.sub-page-text {
+    font-family: "Doppio One", sans-serif;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sub-page-text-container {
+    width: 60%;
+    margin-left: 20%;
+}
